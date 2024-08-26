@@ -1,0 +1,980 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body{
+font-family: "Rubik", sans-serif;
+line-height: 1;
+font-weight: 400;
+color: #555;
+overflow-x: hidden;
+
+
+}
+
+.section-hero{
+    
+    background-color: #f0fff0;
+    padding: 6.4rem 0 9.6rem 0;
+}
+
+.hero{
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+.heading-primary,.heading-secondary{
+   font-weight: 700;
+    line-height: 1.05;
+    color: #333; 
+}
+
+.heading-primary{
+    font-size: 5.2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary{
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-tertiary{
+font-size: 3rem;
+line-height: 1.2;
+margin-bottom: 3.2rem;
+}
+
+.subheading{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 5000;
+    color: #1fb41f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75;
+}
+
+.hero-description{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+
+*:focus{
+    outline: none;
+
+    box-shadow: 0 0 0 0.8rem #24d12467;
+}
+
+
+.btn, .btn:link, .btn:visited{
+background-color: #24d124;
+font-size: 2rem;
+padding: 1.6rem 3.2rem;
+border-radius: 30px;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s;
+
+border: none;
+cursor: pointer;
+font-family: inherit;
+}
+
+.btn--full:link,
+.btn--full:visited{
+    background-color: #24d124;
+    color: white;
+
+}
+
+.btn--full:hover,
+.btn--full:active{
+    background-color: #1fb41f;
+}
+
+
+
+.btn--outline:link,
+.btn--outline:visited{
+    background-color: white;
+    color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active{
+    background-color: #e5ffe5;
+
+    
+    /*border:3px solid white;*/
+
+    box-shadow:inset 0 0 0 3px #1fb41f; 
+}
+
+.link:link,
+.link:visited{
+    color: #24d124;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover,
+.link:active{
+    color: #1fb41f;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+
+.hero-img{
+    width: 100%;
+}
+
+/* setting classes */
+
+.margin-right-sm{
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text{
+    text-align: center;
+}
+
+
+
+/****************************/
+
+
+.btn-mobile-nav{
+border: none;
+background: none;
+cursor: pointer;
+
+display: none;
+}
+
+.icon-mobile-nav{
+height: 4.8rem;
+width: 4.8rem;
+color: #333;
+
+}
+
+.icon-mobile-nav[name="close-circle-outline"]{
+    display: none;
+}
+
+
+.delivered-meals{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+}
+
+.delivered-imgs {
+    display: flex;
+}
+
+.delivered-imgs img{
+    height: 4.2rem;
+    width: 4.2rem;
+    border-radius: 50%;
+    border: 3px solid #1eb01e54;
+    margin-right: -1.4rem;
+    background-size: cover;
+}
+
+.delivered-imgs img:last-child{
+    margin: 0;
+}
+
+.delivered-text{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.delivered-text span{
+    color: #1eb01e;
+    font-weight: 700;
+}
+
+.logo{
+    height: 6em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0fff0;
+
+    height: 9.6rem;
+    padding: 0 4.8rem;
+
+    position: relative;
+}
+
+.main-nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+
+
+.main-nav-link:link,
+.main-nav-link:visited{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s ;
+    display: inline-block;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 30px;
+    color: #fff;
+
+    background-color: #24d124;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+
+    background-color: #b41f1f;
+}
+
+/*********************/
+/*HOW IT WORKS SECTION*/
+/*********************/
+
+
+.section-how{
+padding: 9.6rem 0;
+}
+
+
+.container {
+    /*Creiamo un contenitore che centri tutto cosi lo possiamo usare e riusare*/
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid{
+    display: grid;
+    row-gap: 9.6rem ;
+    column-gap: 6.4rem;
+}
+
+
+.grid:not(:last-child){
+    margin-bottom: 12rem;
+}
+
+
+/* Possiamo riusare i codici in questo modo avendo delle variazioni*/
+
+.grid--2-colums{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid--3-colums{
+    grid-template-columns: 1fr 1fr 1fr;
+} 
+
+.grid--4-colums{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} 
+
+.grid--5-colums{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} 
+
+
+
+.grid--center-vertically{
+    align-items: center;
+}
+
+.section-how div div{
+font-size: 10px;
+}
+
+.step-img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after{
+content: "";
+display: block;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.step-img-box::before{
+    width: 55%;
+    padding-bottom: 55%;
+    background-color: #f2ffe9;
+    z-index: -1;
+}
+
+.step-img-box::after{
+    width: 40%;
+    padding-bottom: 40%;
+    background-color: #dcfed8;
+    z-index: -1;
+}
+    
+
+
+
+
+.step-img{
+    width: 70%;
+}
+
+.step-number{
+font-size: 8.6rem;
+font-weight: 600;
+color: #ddd;
+margin-bottom: 1.2rem;
+}
+
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/*Featured Section*/
+
+.section-featured{
+    padding: 4.8rem 0 3.2rem ;
+}
+
+.logos{
+display: flex;
+justify-content: space-around;
+}
+
+.logos img{
+height: 3.6rem;
+filter: brightness(0);
+opacity: calc(50%);
+}
+
+
+
+
+.heading-featured-in{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.75px;
+    color: #888;
+}
+
+/*CARDS*/
+
+.section-meals{
+    padding: 9.6rem 0;
+}
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.meal:hover{
+    transform:  translateY(-1rem);
+}
+
+.meal-content{
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem ;
+}
+
+.meal-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.meal-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+    color: #30bc30;
+}
+
+.meal-attributes:last-child{
+    margin: 0;
+}
+
+.meal-attribute{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.meal-tags{
+    margin-bottom: 1.2rem;
+}
+
+.meal-img{
+    width: 100%;
+}
+
+.text-list{
+    font-weight: 600;
+    color: #333;
+}
+
+.list-content{
+padding:0 4.8rem;
+}
+
+.list-attributes{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.list-attribute{
+display: flex;
+gap: 1.4rem;
+list-style: none;
+align-items: center;
+}
+
+.tag-vegan{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #94d82d;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+.tag-paleo{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #ffd43b;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.meal-tags-avocadosalad{
+    margin-bottom:1.1rem ;
+    margin-top: 0.6rem;
+}
+
+.all-recipes{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+strong{
+    font-weight: 500;
+}
+
+/*TESTIMONIAL SECTION*/
+
+.section-testimonials{
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    background-color:#f0fff0 ;
+    align-items: center;
+}
+
+.testimonials-container{
+    padding:9.6rem 8.6rem;
+}
+
+.testimonials{
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 4.8rem;
+column-gap: 8rem;
+
+}
+
+
+.testimonial-img{
+    width:6.4rem;
+    border-radius:50%;
+    background-size: auto;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-text{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    color: #444;
+}
+
+.testimonial-name{
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.gallery{
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+
+.gallery-img{
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.gallery-img img{
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.gallery-img img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.subheading-1{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    color: #39cf1f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+
+
+
+/*********************/
+/*PRICING SECTION*/
+/*********************/
+
+
+.section-pricing{
+    padding: 9.6rem 0;
+}
+
+.pricing-plan{
+    background-color: #f3fde9;
+    padding: 4.4rem;
+    border:solid #f0fde9 2px;
+    border-radius: 11px;
+    width: 80%;
+}
+
+.text-list{
+    font-weight: 600;
+    color: #333;
+}
+
+.list-content-plan{
+padding:0 4.8rem;
+}
+
+.list-attributes-plan{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.list-attribute-plan{
+display: flex;
+gap: 1.4rem;
+list-style: none;
+align-items: center;
+line-height: 1.2;
+}
+
+.plan-header{
+    text-align: center;
+    margin-bottom: 4.8rem;
+}
+
+.plan-name{
+color: #35c31c;
+font-weight:600;
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: 1;
+margin-bottom: 3.2rem;
+}
+
+.plan-price{
+font-size: 6.2rem;
+font-weight: 600;
+color: #333;
+margin-bottom: 1.6rem;
+}
+
+.plan-price span{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 0.8rem;
+
+    }
+
+.plan-text{
+font-size: 1.6rem;
+line-height: 1.6;
+color: #6f6f6f;
+}
+
+.plan-sign-up{
+    text-align: center;
+    margin-top: 4.8rem;
+}
+
+.plan-details{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #555;
+    font-weight: 450;
+}
+
+
+
+.princing-plan--starter{
+    justify-self: end;
+    background-color:white;
+    padding: 4.6rem;
+}
+
+.princing-plan--complete{
+    position: relative;
+    padding: 4.8rem;
+    overflow: hidden;
+}
+
+.princing-plan--complete::after{
+    content: "Best value";
+    position: absolute;
+    top: 6%;
+    right: -10%;
+
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+    padding: 0.8rem 4.8rem;
+    transform: rotate(45deg);
+    
+}
+
+
+/*FEATURES SALUBRITY MEALS */
+
+.feature-icon{
+color: #35c31c;
+height: 3.2rem;
+width: 3.2rem;
+background-color:#e9ffe6 ;
+padding: 1.6rem;
+margin-bottom: 3.2rem;
+border-radius: 50%;
+}
+
+.feature-title{
+font-size: 2.4rem;
+color: #333;
+font-weight: 700;
+margin-bottom: 1.6rem;
+}
+
+.feature-text{
+font-size: 1.8rem;
+line-height: 1.8;
+}
+
+
+/*********************/
+/*CALL TO ACTION SECTION*/
+/*********************/
+
+
+
+.section-cta{
+    padding: 9.6rem 0 12.8rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #35c31c;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+    background-image: linear-gradient(to right,#83cf76,#68d24d);
+
+    overflow: hidden;
+}
+
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta-text-box{
+    color: #18540d;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary{
+    color: #18540d;
+    margin-bottom: 3.2rem;
+}
+
+.cta-img-box{
+background-image: linear-gradient(
+    to right bottom,
+    rgba(138, 235, 78, 0.008),
+    rgba(142, 230, 34, 0)
+),
+    url("/img/girl-eating-avocado.jpg");
+    
+background-size: cover;
+background-position: center;
+}
+
+
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: inherit;
+}
+
+.cta-form input::placeholder{
+    color: #aaa;
+}
+
+
+.cta-form button{
+    background-color: #356f11;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem !important;
+}
+
+.cta-form button:hover,
+.cta-form button:active{
+    background-color: #fdf2e9;
+    color: #27620e;
+    box-shadow:inset 0 0 0 1px #333;
+    transition: all 0.5s
+}
+
+.cta *:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+
+/*********************/
+/*FOOTER*/
+/*********************/
+
+.footer{
+    padding: 12.8rem 0;
+    border-top: 1px solid #f0fff0 ;
+    box-shadow: -1px 0px 11px 0px rgb(53 53 53 / 10%);
+    background-color: #e7ffe7;
+}
+
+.se-footer{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 5.6rem;
+    width: 30rem;
+}
+
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color:#767676;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center
+}
+
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom:4rem;
+}
+
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+
+
+.contacts{
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.adress{
+    margin-bottom: 2.4rem;
+}
+
+/*Sticky navbar*/
+
+.sticky .header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+    z-index: 999; 
+    background-color:rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.074)
+    ;
+}
+
+.sticky .section-hero {
+    margin-top: 9.6rem;
+}
+
+
